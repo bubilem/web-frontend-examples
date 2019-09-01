@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Photo gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 100%;
+        filter: saturate(50%) hue-rotate(-45deg);
+      }
+      img:hover {
+        filter: saturate(100%) hue-rotate(0deg);
+      }
+      @media screen and (min-width: 400px) {
+        section {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="https://picsum.photos/id/1015/400/300" />
+      <img src="https://picsum.photos/id/1016/400/300" />
+      <img src="https://picsum.photos/id/1022/400/300" />
+      <img src="https://picsum.photos/id/1018/400/300" />
+      <img src="https://picsum.photos/id/1019/400/300" />
+      <img src="https://picsum.photos/id/1039/400/300" />
+      <img src="https://picsum.photos/id/1028/400/300" />
+      <img src="https://picsum.photos/id/231/400/300" />
+      <img src="https://picsum.photos/id/251/400/300" />
+      <img src="https://picsum.photos/id/323/400/300" />
+    </section>
+  </body>
+</html>

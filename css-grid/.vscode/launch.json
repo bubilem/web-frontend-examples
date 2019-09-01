@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch index in Chrome",
+      "file": "${workspaceFolder}/dist/index.html"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch one-file-example in Chrome",
+      "file": "${workspaceFolder}/dist/one-file-example.html"
+    }
+  ]
+}

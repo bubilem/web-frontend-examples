@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap");
+@import "minireset";
+
+$bg-color: #95a5a6;
+$bg-color-1: #1abc9c;
+$bg-color-2: #2ecc71;
+$bg-color-3: #3498db;
+$bg-color-4: #9b59b6;
+
+body {
+  font-family: "Hepta Slab", serif;
+  background: $bg-color;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0.5em;
+}
+
+section {
+  margin: 10px 0;
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+@import "example-one";
+
+@import "example-two";
+
+@import "example-three";

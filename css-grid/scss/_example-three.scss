@@ -1,0 +1,15 @@
+section.example-three {
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+  }
+
+  img {
+    width: 100%;
+    filter: hue-rotate(-90deg);
+  }
+  img:hover {
+    filter: hue-rotate(0deg);
+  }
+}

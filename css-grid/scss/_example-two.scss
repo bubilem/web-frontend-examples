@@ -1,0 +1,38 @@
+section.example-two {
+  > div {
+    display: grid;
+    height: 25vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "area-one area-four area-four"
+      "area-one . area-three"
+      "area-two area-two area-three";
+
+    > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    > div:nth-child(1) {
+      background: $bg-color-1;
+      grid-area: area-one;
+    }
+
+    > div:nth-child(2) {
+      background: $bg-color-2;
+      grid-area: area-two;
+    }
+
+    > div:nth-child(3) {
+      background: $bg-color-3;
+      grid-area: area-three;
+    }
+
+    > div:nth-child(4) {
+      background: $bg-color-4;
+      grid-area: area-four;
+    }
+  }
+}
