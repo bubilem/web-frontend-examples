@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab:400,700&display=swap");
+@import "minireset";
+
+$bg-color: #37474f;
+$card-color: #ffffff;
+$text-color: #37474f;
+$link-color: #0097a7;
+
+body {
+  font-family: "Hepta Slab", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-color;
+  background: $bg-color;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  line-height: 1.5em;
+  background-color: #4a5459;
+  background-image: linear-gradient(
+      45deg,
+      transparent 46%,
+      rgba(96, 125, 139, 0.2) 48%,
+      rgba(96, 125, 139, 0.4) 52%,
+      transparent 54%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 46%,
+      rgba(120, 144, 156, 0.2) 48%,
+      rgba(120, 144, 156, 0.4) 52%,
+      transparent 54%
+    );
+  background-size: 15px 15px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 250ms linear;
+  &:hover {
+    filter: brightness(75%);
+  }
+}
+
+.h-card {
+  text-align: center;
+  width: 60%;
+  max-width: 500px;
+  min-width: 280px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background: $card-color;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 250ms;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .u-photo {
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    filter: grayscale(80%) hue-rotate(200deg);
+    animation-name: photo-animation;
+    animation-direction: normal;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    &:hover {
+      animation-play-state: running;
+    }
+  }
+
+  .main {
+    @media screen and (min-width: 640px) {
+      text-align: left;
+      margin-left: 1em;
+    }
+    h1.p-name {
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 0.9em;
+      margin: 10px 0;
+    }
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+      width: 100%;
+      a {
+        font-size: 1.5em;
+        &[class="github"] {
+          color: #25292e;
+        }
+        &[class="facebook"] {
+          color: #3b5999;
+        }
+        &[class="youtube"] {
+          color: #cd201f;
+        }
+      }
+      @media screen and (min-width: 640px) {
+        justify-content: flex-start;
+        a {
+          margin-right: 20px;
+        }
+      }
+    }
+    .p-adr {
+      margin-bottom: 8px;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      a {
+        animation-name: hue-animation;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        &:hover {
+          color: black;
+          animation-play-state: paused;
+        }
+      }
+    }
+  }
+}
+
+@keyframes photo-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hue-animation {
+  from {
+    filter: hue-rotate(0deg) grayscale(20%);
+  }
+  to {
+    filter: hue-rotate(360deg) grayscale(20%);
+  }
+}
