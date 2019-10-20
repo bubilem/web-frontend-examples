@@ -1,0 +1,105 @@
+$link-color: #37474f;
+
+nav.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0.8rem;
+  background: white;
+  position: relative;
+  height: 1.4rem;
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+  &.open {
+    height: 30vh;
+    .icon {
+      transform: rotate(90deg);
+    }
+  }
+  .brand {
+    padding: 0rem;
+    a {
+      color: $link-color;
+      font-size: 1.2rem;
+      .flip {
+        transform: translate(3px, 0) scaleX(-1);
+        display: inline-block;
+      }
+      sup {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .toggle-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    .icon {
+      padding: 0.8rem;
+      transition: transform 800ms ease-in-out;
+      i {
+        font-size: 1.4em;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    li {
+      a {
+        color: $link-color;
+        text-align: center;
+        padding: 0.5rem;
+        display: block;
+        transition: background-color 400ms ease-in-out, color 600ms ease-in-out;
+        &:hover {
+          color: white;
+          background: $link-color;
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    li {
+      a {
+        padding: 0.5rem;
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navbar {
+    flex-direction: row;
+    height: initial;
+    padding: 0 1rem;
+    &.open {
+      height: initial;
+    }
+    .toggle-collapse {
+      display: none;
+    }
+    .menu {
+      width: initial;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+article {
+  padding: 2rem;
+}
+blockquote {
+  position: relative;
+  margin-left: 3rem;
+}
+blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  filter: opacity(0.3);
+}
+
+.fcbk {
+  color: #3b5999;
+}
+.twtr {
+  color: #55acee;
+}
+.inst {
+  color: #e4405f;
+}
+.ytub {
+  color: #cd201f;
+}
