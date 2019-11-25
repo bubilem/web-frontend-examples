@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: cornsilk;
+  background: #357;
+}
+blockquote {
+  margin: 1rem;
+  padding: 0 0 0 1rem;
+  border-left: 5px gray solid;
+}
+blockquote > p {
+  margin-bottom: 0;
+  font-style: italic;
+}
+p {
+  text-align: justify;
+  margin: 0.75rem 0;
+}
+a {
+  color: #579;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+a:hover {
+  color: #357;
+}
+header {
+  background: cornsilk;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+header .logo {
+  color: #444;
+  padding: 0.1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.4rem;
+}
+header .logo > span:nth-child(1) {
+  transform: scaleX(-1) translateX(-0.5rem);
+  display: inline-block;
+}
+header .logo > span:nth-child(3) {
+  transform: translateY(-0.2rem);
+  display: inline-block;
+}
+header nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header nav > ul > li {
+  margin: 0;
+  padding: 0.1rem;
+}
+header nav > ul > li > a {
+  margin: 0;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: cornsilk;
+  background: #579;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+}
+header nav > ul > li > a:hover {
+  color: cornsilk;
+  background: #357;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  background: cornsilk;
+  border-radius: 0.5rem;
+}
+article {
+  padding: 2rem;
+  flex-basis: 70%;
+}
+article h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+article p:first-of-type {
+  font-size: 1.1rem;
+}
+aside {
+  margin: 1rem;
+  padding-top: 1rem;
+  flex-basis: 30%;
+  border-top: 0.5rem #357 dotted;
+}
+aside h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 0 0 0;
+}
+aside p {
+  font-size: 0.9rem;
+}
+aside p:last-of-type {
+  font-size: 0.8rem;
+}
+footer p {
+  text-align: center;
+}
+
+@media (min-width: 990px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main {
+    width: 990px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  aside {
+    margin: 1rem 1rem 1rem 0;
+    padding: 1rem 1rem 1rem 2rem;
+    flex-basis: 30%;
+    border-top: none;
+    border-left: 0.5rem #357 dotted;
+  }
+}
