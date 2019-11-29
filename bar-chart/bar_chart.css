@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #444;
+}
+.bar-chart {
+  width: 90vw;
+  height: 90vh;
+  margin: 1rem auto;
+  padding-bottom: 0.25rem;
+  border-radius: 1rem;
+  background: #666;
+  display: flex;
+  flex-direction: column;
+}
+.bar-chart > h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #555;
+  background: lightskyblue;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.bar-chart > ul {
+  height: 100%;
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  border-bottom: 3px lightskyblue solid;
+  overflow: hidden;
+}
+.bar-chart > ul > li {
+  width: 100%;
+  padding: 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateY(100vh);
+  animation-name: bars;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.bar-chart > ul > li:nth-of-type(2n + 0) {
+  animation-delay: 250ms;
+}
+.bar-chart > ul > li:nth-of-type(2n + 1) {
+  animation-delay: 500ms;
+}
+.bar-chart > ul > li > div {
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+.bar-chart > ul > li > div:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: lightskyblue;
+  text-align: center;
+  background: transparent;
+}
+.bar-chart > ul > li:hover > div:first-of-type {
+  color: whitesmoke;
+}
+.bar-chart > ul > li > div:last-of-type {
+  background: lightskyblue;
+  border-radius: 0.3rem 0.3rem 0 0;
+  padding: 0rem;
+}
+.bar-chart > ul > li:hover > div:last-of-type {
+  background: whitesmoke;
+}
+@media (min-width: 400px) {
+  .bar-chart {
+    border-radius: 1rem;
+  }
+  .bar-chart > h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .bar-chart > ul > li {
+    padding: 0 1rem;
+  }
+  .bar-chart > ul > li > div:first-of-type {
+    font-size: 1.5rem;
+  }
+  .bar-chart > ul > li > div:last-of-type {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0rem;
+  }
+}
+@keyframes bars {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
