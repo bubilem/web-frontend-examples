@@ -8,6 +8,7 @@ Various illustrations of creation in HTML, CSS, SASS, JS, jQuery...
 - [Business card](business-card)
 - [CSS basics](css-basics)
 - [CSS grid](css-grid)
+- [Christmas tree](christmas-tree)
 - [Login window](login-window)
 - [Navbar](navbar)
 - [Simple page scroller](simple-page-scroller)
