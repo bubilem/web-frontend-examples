@@ -1,0 +1,182 @@
+@import "minireset";
+@import "animation";
+@import "mixins";
+
+body {
+  background: #333;
+}
+
+.tree {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  > .base {
+    background: linear-gradient(0deg, #943, transparent);
+    width: 40px;
+    height: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -20px;
+    .floor {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      position: absolute;
+      left: 50%;
+      bottom: -60px;
+      @include bending(12s);
+    }
+    > .floor {
+      border-width: 0 160px 120px 160px;
+      border-bottom-color: rgba(50, 255, 60, 0.91);
+      bottom: 50px;
+      margin-left: -160px;
+      > .ornament:nth-of-type(1) {
+        @include ornament(90px, 60px, #f44, 200ms);
+      }
+      > .ornament:nth-of-type(2) {
+        @include ornament(20px, 80px, #f33, 400ms);
+      }
+      > .ornament:nth-of-type(3) {
+        @include ornament(-80px, 95px, #e55, 600ms);
+      }
+      > .floor {
+        border-width: 0 140px 120px 140px;
+        border-bottom-color: rgba(50, 255, 70, 0.92);
+        margin-left: -140px;
+        > .ornament:nth-of-type(1) {
+          @include ornament(30px, 55px, #e66, 800ms);
+        }
+        > .ornament:nth-of-type(2) {
+          @include ornament(-50px, 80px, #f77, 1s);
+        }
+        > .floor {
+          border-width: 0 120px 120px 120px;
+          border-bottom-color: rgba(50, 255, 80, 0.93);
+          margin-left: -120px;
+          > .ornament:nth-of-type(1) {
+            @include ornament(30px, 55px, #f88, 1.2s);
+          }
+          > .ornament:nth-of-type(2) {
+            @include ornament(70px, 95px, #e44, 1.4s);
+          }
+          > .ornament:nth-of-type(3) {
+            @include ornament(-70px, 90px, #f55, 1.6s);
+          }
+          > .ornament:nth-of-type(4) {
+            @include ornament(-10px, 80px, #f33, 1.8s);
+          }
+          > .floor {
+            border-width: 0 100px 120px 100px;
+            border-bottom-color: rgba(50, 255, 90, 0.94);
+            margin-left: -100px;
+            > .ornament:nth-of-type(1) {
+              @include ornament(40px, 60px, #e55, 2s);
+            }
+            > .ornament:nth-of-type(2) {
+              @include ornament(-60px, 90px, #f77, 2.2s);
+            }
+            > .floor {
+              border-width: 0 80px 120px 80px;
+              border-bottom-color: rgba(50, 255, 100, 0.95);
+              margin-left: -80px;
+              > .ornament:nth-of-type(1) {
+                @include ornament(-10px, 50px, #e55, 2.4s);
+              }
+              > .ornament:nth-of-type(2) {
+                @include ornament(-50px, 100px, #f55, 2.6s);
+              }
+              > .ornament:nth-of-type(3) {
+                @include ornament(50px, 70px, #f44, 2.8s);
+              }
+              > .star {
+                font-size: 40px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 0;
+                margin-left: -10px;
+                margin-right: 10px;
+                margin-bottom: -10px;
+                border-right: 10px solid transparent;
+                border-bottom: 90px solid #fd5;
+                border-left: 10px solid transparent;
+                > .shine {
+                  width: 1px;
+                  height: 1px;
+                  border-radius: 50%;
+                  position: absolute;
+                  top: 52px;
+                  z-index: 99;
+                  @include star-shining();
+                }
+                &:before,
+                &:after {
+                  content: "";
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  top: 40px;
+                  left: -40px;
+                  border-right: 40px solid transparent;
+                  border-bottom: 20px solid #fd5;
+                  border-left: 40px solid transparent;
+                  transform: rotate(-35deg);
+                }
+                &:after {
+                  transform: rotate(35deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .snow {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: -10px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.6);
+    animation-name: snow-falling;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    &:nth-of-type(2) {
+      @include snow(10%, 5s, 1s);
+    }
+    &:nth-of-type(3) {
+      @include snow(20%, 8s, 0.5s);
+    }
+    &:nth-of-type(4) {
+      @include snow(30%, 7s, 1.2s);
+    }
+    &:nth-of-type(5) {
+      @include snow(40%, 5s, 4s);
+    }
+    &:nth-of-type(6) {
+      @include snow(50%, 6s, 0s);
+    }
+    &:nth-of-type(7) {
+      @include snow(60%, 4s, 0.5s);
+    }
+    &:nth-of-type(8) {
+      @include snow(70%, 7s, 3s);
+    }
+    &:nth-of-type(9) {
+      @include snow(80%, 6s, 8s);
+    }
+    &:nth-of-type(10) {
+      @include snow(90%, 5s, 4s);
+    }
+  }
+}

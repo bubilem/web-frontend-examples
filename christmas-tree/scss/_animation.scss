@@ -1,0 +1,58 @@
+@keyframes bending {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(+5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes star-shining {
+  0% {
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+  20% {
+    box-shadow: 0 0 40px 100px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    box-shadow: 0 0 300px 100px rgba(200, 200, 200, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ornament-shining {
+  0% {
+    box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    box-shadow: 0 0 5px 10px rgba(255, 255, 200, 0.8);
+    transform: scale(1.2);
+    filter: hue-rotate(45deg);
+  }
+  80% {
+    box-shadow: 0 0 50px 10px rgba(255, 255, 200, 0.9);
+    transform: scale(0.6);
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes snow-falling {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

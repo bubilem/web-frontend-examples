@@ -1,0 +1,40 @@
+@mixin bending($duration) {
+  animation-name: bending;
+  animation-duration: $duration;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin star-shining() {
+  animation-name: star-shining;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin ornament($x, $y, $color, $delay) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: $y;
+  left: $x;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: $color;
+  animation-name: ornament-shining;
+  animation-duration: 5s;
+  animation-delay: $delay;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin snow($x, $duration, $delay) {
+  left: $x;
+  animation-duration: $duration;
+  animation-delay: $delay;
+}
