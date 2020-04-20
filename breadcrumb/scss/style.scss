@@ -1,0 +1,50 @@
+body {
+  color: #333;
+  background: #eee;
+  padding: 1em;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4em;
+  position: relative;
+  background: #fff;
+}
+a {
+  color: #449;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.breadcrumb {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1em;
+  margin: 1em 0;
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      &::after {
+        content: "/";
+        padding: 0 0 0 0.3em;
+        margin: 0;
+      }
+      &:last-child {
+        font-weight: 700;
+        &::after {
+          content: none;
+        }
+      }
+      a {
+        padding: 0 0.1em;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ Various illustrations of creation in HTML, CSS, SASS, JS, jQuery...
 ## Examples
 
 - [Bar chart](bar-chart)
+- [Breadcrumb navigation](breadcrumb)
 - [Business card](business-card)
 - [CSS basics](css-basics)
 - [CSS grid](css-grid)
