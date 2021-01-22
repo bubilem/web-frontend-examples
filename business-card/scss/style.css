@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Hepta+Slab:400,700&display=swap");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  font-family: "Hepta Slab", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #37474f;
+  background: #37474f;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  line-height: 1.5em;
+  background-color: #4a5459;
+  background-image: linear-gradient(45deg, transparent 46%, rgba(96, 125, 139, 0.2) 48%, rgba(96, 125, 139, 0.4) 52%, transparent 54%), linear-gradient(-45deg, transparent 46%, rgba(120, 144, 156, 0.2) 48%, rgba(120, 144, 156, 0.4) 52%, transparent 54%);
+  background-size: 15px 15px;
+}
+
+a {
+  color: #0097a7;
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+a:hover {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+
+.h-card {
+  text-align: center;
+  width: 60%;
+  max-width: 500px;
+  min-width: 280px;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.h-card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (min-width: 640px) {
+  .h-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+  }
+}
+
+.h-card .u-photo {
+  max-width: 180px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 100%;
+  -webkit-filter: grayscale(80%) hue-rotate(200deg);
+          filter: grayscale(80%) hue-rotate(200deg);
+  -webkit-animation-name: photo-animation;
+          animation-name: photo-animation;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.h-card .u-photo:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@media screen and (min-width: 640px) {
+  .h-card .main {
+    text-align: left;
+    margin-left: 1em;
+  }
+}
+
+.h-card .main h1.p-name {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 0.9em;
+  margin: 10px 0;
+}
+
+.h-card .main .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.h-card .main .social a {
+  font-size: 1.5em;
+}
+
+.h-card .main .social a[class="github"] {
+  color: #25292e;
+}
+
+.h-card .main .social a[class="facebook"] {
+  color: #3b5999;
+}
+
+.h-card .main .social a[class="youtube"] {
+  color: #cd201f;
+}
+
+@media screen and (min-width: 640px) {
+  .h-card .main .social {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .h-card .main .social a {
+    margin-right: 20px;
+  }
+}
+
+.h-card .main .p-adr {
+  margin-bottom: 8px;
+}
+
+.h-card .main .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.h-card .main .contacts a {
+  -webkit-animation-name: hue-animation;
+          animation-name: hue-animation;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.h-card .main .contacts a:hover {
+  color: black;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes photo-animation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes photo-animation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes hue-animation {
+  from {
+    -webkit-filter: hue-rotate(0deg) grayscale(20%);
+            filter: hue-rotate(0deg) grayscale(20%);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg) grayscale(20%);
+            filter: hue-rotate(360deg) grayscale(20%);
+  }
+}
+
+@keyframes hue-animation {
+  from {
+    -webkit-filter: hue-rotate(0deg) grayscale(20%);
+            filter: hue-rotate(0deg) grayscale(20%);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg) grayscale(20%);
+            filter: hue-rotate(360deg) grayscale(20%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

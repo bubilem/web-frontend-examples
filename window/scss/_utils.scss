@@ -1,0 +1,21 @@
+$bg-color-one: #ff3562;
+$bg-color-two: #1b1b3a;
+$bg-color-window: #ffffff;
+$text-color: #693668;
+$text-color-btn: #ffffff;
+$text-color-lnk: $bg-color-one;
+$text-color-lnk-hover: $bg-color-two;
+
+@mixin gradient($type: "default") {
+  background-color: $bg-color-one;
+  @if $type == "button" {
+    background: linear-gradient(45deg, $bg-color-one, $bg-color-two, $bg-color-one);
+    background-size: 200%;
+    background-position: left;
+    &:hover {
+      background-position: right;
+    }
+  } @else {
+    background-image: linear-gradient(45deg, $bg-color-one, $bg-color-two);
+  }
+}

@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes bending {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes bending {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes star-shining {
+  0% {
+    -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 40px 100px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 40px 100px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 300px 100px rgba(200, 200, 200, 0.9);
+            box-shadow: 0 0 300px 100px rgba(200, 200, 200, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes star-shining {
+  0% {
+    -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 40px 100px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 40px 100px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 300px 100px rgba(200, 200, 200, 0.9);
+            box-shadow: 0 0 300px 100px rgba(200, 200, 200, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes ornament-shining {
+  0% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+            box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 5px 10px rgba(255, 255, 200, 0.8);
+            box-shadow: 0 0 5px 10px rgba(255, 255, 200, 0.8);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 50px 10px rgba(255, 255, 200, 0.9);
+            box-shadow: 0 0 50px 10px rgba(255, 255, 200, 0.9);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+            box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes ornament-shining {
+  0% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+            box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 5px 10px rgba(255, 255, 200, 0.8);
+            box-shadow: 0 0 5px 10px rgba(255, 255, 200, 0.8);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-filter: hue-rotate(45deg);
+            filter: hue-rotate(45deg);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 50px 10px rgba(255, 255, 200, 0.9);
+            box-shadow: 0 0 50px 10px rgba(255, 255, 200, 0.9);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+            box-shadow: 0 0 1px 1px rgba(255, 220, 200, 0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+@-webkit-keyframes snow-falling {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+@keyframes snow-falling {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+body {
+  background: #333;
+}
+
+.tree {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tree > .base {
+  background: -webkit-gradient(linear, left bottom, left top, from(#943), to(transparent));
+  background: linear-gradient(0deg, #943, transparent);
+  width: 40px;
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.tree > .base .floor {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  -webkit-animation-name: bending;
+          animation-name: bending;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor {
+  border-width: 0 160px 120px 160px;
+  border-bottom-color: rgba(50, 255, 60, 0.91);
+  bottom: 50px;
+  margin-left: -160px;
+}
+
+.tree > .base > .floor > .ornament:nth-of-type(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 90px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f44;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .ornament:nth-of-type(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 80px;
+  left: 20px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f33;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .ornament:nth-of-type(3) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  left: -80px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #e55;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor {
+  border-width: 0 140px 120px 140px;
+  border-bottom-color: rgba(50, 255, 70, 0.92);
+  margin-left: -140px;
+}
+
+.tree > .base > .floor > .floor > .ornament:nth-of-type(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 55px;
+  left: 30px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #e66;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .ornament:nth-of-type(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 80px;
+  left: -50px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f77;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor {
+  border-width: 0 120px 120px 120px;
+  border-bottom-color: rgba(50, 255, 80, 0.93);
+  margin-left: -120px;
+}
+
+.tree > .base > .floor > .floor > .floor > .ornament:nth-of-type(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 55px;
+  left: 30px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f88;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .ornament:nth-of-type(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  left: 70px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #e44;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .ornament:nth-of-type(3) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 90px;
+  left: -70px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f55;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .ornament:nth-of-type(4) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 80px;
+  left: -10px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f33;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor {
+  border-width: 0 100px 120px 100px;
+  border-bottom-color: rgba(50, 255, 90, 0.94);
+  margin-left: -100px;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .ornament:nth-of-type(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 40px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #e55;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .ornament:nth-of-type(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 90px;
+  left: -60px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f77;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor {
+  border-width: 0 80px 120px 80px;
+  border-bottom-color: rgba(50, 255, 100, 0.95);
+  margin-left: -80px;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .ornament:nth-of-type(1) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: -10px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #e55;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .ornament:nth-of-type(2) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 100px;
+  left: -50px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f55;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .ornament:nth-of-type(3) {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 70px;
+  left: 50px;
+  margin-left: -15px;
+  border-radius: 50%;
+  background: #f44;
+  -webkit-animation-name: ornament-shining;
+          animation-name: ornament-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .star {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  border-right: 10px solid transparent;
+  border-bottom: 90px solid #fd5;
+  border-left: 10px solid transparent;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .star > .shine {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 52px;
+  z-index: 99;
+  -webkit-animation-name: star-shining;
+          animation-name: star-shining;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .star:before, .tree > .base > .floor > .floor > .floor > .floor > .floor > .star:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  border-right: 40px solid transparent;
+  border-bottom: 20px solid #fd5;
+  border-left: 40px solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.tree > .base > .floor > .floor > .floor > .floor > .floor > .star:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.tree .snow {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: -10px;
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.6);
+  -webkit-animation-name: snow-falling;
+          animation-name: snow-falling;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.tree .snow:nth-of-type(2) {
+  left: 10%;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.tree .snow:nth-of-type(3) {
+  left: 20%;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.tree .snow:nth-of-type(4) {
+  left: 30%;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.tree .snow:nth-of-type(5) {
+  left: 40%;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.tree .snow:nth-of-type(6) {
+  left: 50%;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.tree .snow:nth-of-type(7) {
+  left: 60%;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.tree .snow:nth-of-type(8) {
+  left: 70%;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.tree .snow:nth-of-type(9) {
+  left: 80%;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.tree .snow:nth-of-type(10) {
+  left: 90%;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+/*# sourceMappingURL=style.css.map */
