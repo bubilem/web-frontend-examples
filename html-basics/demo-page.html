@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Demo Page</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Michal Bubílek" />
+    <style>
+      body{
+        font-size: 2em;
+        color: #eee;
+        background-color: #444;
+      }
+      a{
+        color: #88f;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Demo Page <small>[just a few html examples]</small></h1>
+      <nav>
+        <ul>
+          <li><a href="#article-one">Article One</a></li>
+          <li><a href="#article-two">Article Two</a></li>
+          <li><a href="#article-three">Article Three</a></li>
+          <li><a href="#article-four">Article Four</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article id="article-one">
+        <h2>Article One</h2>
+        <blockquote>
+          Curabitur sit amet dolor maximus, facilisis nisl eu, eleifend dolor.
+          Nulla facilisi. Sed ultrices elementum mi, eu auctor ullamcorper ut.
+        </blockquote>
+        <p>
+          <b>Lorem</b> ipsum <a a href="demo.html">dolor sit amet</a>,
+          consectetur adipiscing elit. Duis lectus magna, pharetra at viverra
+          sed, consequat eu lorem. In et tempor ligula. Aenean sed lacinia
+          metus, non ornare libero. Nullam gravida ultricies dolor. Vestibulum
+          laoreet sem metus, eu pulvinar lacus sodales vitae. Nulla leo diam,
+          dignissim vitae lobortis at, tempus quis nisl. Sed nec fermentum
+          turpis. Donec consequat, libero in vehicula blandit, ligula elit
+          laoreet erat, a interdum arcu justo non nibh. Nam posuere condimentum
+          felis eget pretium. Interdum et malesuada fames ac ante ipsum primis
+          in faucibus. Donec eget felis suscipit, vehicula turpis non, convallis
+          est. Etiam tristique ante at metus bibendum fermentum. Class aptent
+          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos.
+        </p>
+        <h3>Math</h3>
+        <p>
+          <b>E</b> = m &times; <i>c<sup>2</sup></i>
+        </p>
+        <p><cite>Mass–energy equivalence</cite> by Albert Einstein</p>
+        <h3>PHP Source code</h3>
+        <code>
+          &lt;?php<br>
+          echo "Hello world!";
+        </code>
+      </article>
+      <article id="article-two">
+        <h2>Article Two</h2>
+        <h3>Table</h3>
+        <table>
+            <caption>Table 1. Lorem</caption>
+            <tr>
+                <th>#</td>
+                <th>ABC</th>
+                <th>DEF</th>
+                <th>GHI</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>254</td>
+                <td>470</td>
+                <td>652</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>471</td>
+                <td>785</td>
+                <td>825</td>
+            </tr>
+        </table>
+        <h3>Image</h3>
+        <figure>
+            <img src="images/einstein.jpg" alt="Albert Einstein">          
+            <figcaption>Image 1. Albert Einstein</figcaption>
+        </figure>
+      </article>
+      <article id="article-three">
+        <h2>Article Three</h2>
+        <h3>Ordered list</h3>
+        <ol>
+            <li>Fisrt item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        <h3>Unordered list</h3>
+        <ul>
+            <li>Fisrt item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <h3>List in list</h3>
+        <ol>
+            <li>Fisrt item</li>
+            <li>Second item
+                <ul>
+                    <li>Fisrt sub-item</li>
+                    <li>Second sub-item</li>
+                    <li>Third sub-item</li>
+                </ul>
+            </li>
+            <li>Third item</li>
+        </ol>
+        
+      </article>
+      <article id="article-four">
+        <h2>Article Four</h2>
+        <h3>Registration Form</h3>
+        <form>
+            <fieldset>
+                <legend>Registration data:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass"><br>
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="student">student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="other">other</option>
+                </select><br>
+                <label for="mess">Message:</label>
+                <textarea name="message"></textarea><br>
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>        
+      </article>
+    </main>
+    <footer>
+        <p>This is footer. Bye.</p>
+        <address>
+            Written by <a href="mailto:michal.bubilek@skolavdf.cz">Michal Bubílek</a>.<br>
+            Mariánská 1100, Varnsdorf<br>
+            Czech Republic
+            </address>
+        <p>Go to <a href="#top">TOP</a></p>
+    </footer>
+  </body>
+</html>
