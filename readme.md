@@ -12,6 +12,7 @@ Various illustrations of creation in HTML, CSS, SASS, JS, jQuery...
 - [Christmas tree](christmas-tree)
 - [Login window](login-window)
 - [Navbar](navbar)
+- [Piškvorky](piskvorky)
 - [Simple page scroller](simple-page-scroller)
 
 ## Getting Started

@@ -1,0 +1,58 @@
+$size: 15;
+$vwvh-ratio: floor(100 / ($size + 1));
+$font-size: #{"min("}$vwvh-ratio#{"vw,"}$vwvh-ratio#{"vh)"};
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #ccc;
+  background: #333;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#field {
+  display: grid;
+  grid-template-columns: repeat($size, 1fr);
+  width: 100vmin;
+  height: 100vmin;
+  background: #eee;
+  > div {
+    font-family: monospace;
+    font-weight: 600;
+    position: relative;
+    background: #444;
+    transition: all 250ms ease-in-out;
+    &:nth-child(2n) {
+      background: #555;
+    }
+    &:hover {
+      cursor: pointer;
+      filter: opacity(0.6);
+    }
+    &.x:hover,
+    &.o:hover {
+      cursor: default;
+      filter: opacity(1);
+    }
+    &.x::after,
+    &.o::after {
+      content: "X";
+      font-size: $font-size;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    &.o::after {
+      content: "O";
+    }
+    &.win {
+      color: #2f3;
+    }
+  }
+}
