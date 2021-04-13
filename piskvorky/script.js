@@ -1,4 +1,4 @@
-var size = 15;
+var size = 9;
 var toWin = 5;
 var field = new Array(size).fill().map(() => new Array(size).fill("-"));
 var gameOver = false;
@@ -18,7 +18,8 @@ function play() {
       } else if (this.className != "x" && this.className != "o") {
         this.classList.add(player);
         field[Math.floor(i / size)][i % size] = player;
-        if ((gameOver = checkWin(player, Math.floor(i / size), i % size))) {
+        gameOver = checkWin(player, Math.floor(i / size), i % size);
+        if (gameOver) {
           console.log("Player " + player + " wins.");
         }
         player = player == "x" ? "o" : "x";

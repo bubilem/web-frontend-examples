@@ -1,4 +1,4 @@
-$size: 15;
+$size: 9;
 $vwvh-ratio: floor(100 / ($size + 1));
 $font-size: #{"min("}$vwvh-ratio#{"vw,"}$vwvh-ratio#{"vh)"};
 * {
