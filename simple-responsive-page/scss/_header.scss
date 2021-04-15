@@ -1,0 +1,39 @@
+/* header */
+header {
+  color: $color_text_alt;
+  background: $color_bg_alt;
+  > div.content > div {
+    @media screen and (min-width: $breakpoint) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        margin-left: 1em;
+      }
+    }
+    div.logo {
+      text-align: center;
+      margin: 1em 0;
+      > div {
+        font-size: 3em;
+        font-weight: 700;
+      }
+    }
+    nav {
+      margin: 1em 0;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+          color: $color_link_alt;
+          padding: 0.2em;
+          text-decoration: none;
+          &:hover {
+            color: $color_link_hover_alt;
+          }
+        }
+      }
+    }
+  }
+}

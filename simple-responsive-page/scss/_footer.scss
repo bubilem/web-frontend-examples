@@ -1,0 +1,24 @@
+/* footer */
+footer {
+  color: $color_text_alt;
+  background: $color_bg_alt;
+  padding: 1em 0;
+  > div.content > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul li {
+      margin: 0.5em 0;
+      a {
+        color: $color_link_alt;
+        text-decoration: none;
+        &:hover {
+          color: $color_link_hover_alt;
+        }
+      }
+    }
+    .contact li {
+      text-align: right;
+    }
+  }
+}

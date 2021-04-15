@@ -1,0 +1,21 @@
+@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+
+/* colors */
+$color_text: #2c3e50;
+$color_bg: #fff;
+$color_link: #12967b;
+$color_link_hover: #0c6150;
+
+/* alt colors */
+$color_text_alt: #7f8c8d;
+$color_bg_alt: #2c3e50;
+$color_link_alt: #15bb9a;
+$color_link_hover_alt: #fff;
+
+/* layout*/
+$breakpoint: 768px;
+
+@import "base";
+@import "header";
+@import "footer";
