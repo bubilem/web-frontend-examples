@@ -1,4 +1,4 @@
-# Simple responzive webpage
+# Simple responsive webpage
 
 HTML, CSS, SCSS, Google fonts
 
