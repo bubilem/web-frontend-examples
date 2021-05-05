@@ -12,7 +12,7 @@ h1 {
 p {
   margin: 0.2em 0 0.5em 0;
   text-align: justify;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 a {
@@ -27,9 +27,9 @@ a {
 
 .content {
   width: 100%;
-  max-width: $breakpoint;
+  max-width: $max_width;
   margin: 0 auto;
   > div {
-    padding: 0.25em 1em;
+    padding: 0.25em 2em;
   }
 }
