@@ -7,6 +7,7 @@ Various illustrations of creation in HTML, CSS, SASS, JS, jQuery...
 - [Bar chart](bar-chart)
 - [Breadcrumb navigation](breadcrumb)
 - [Business card](business-card)
+- [Clock](clock)
 - [CSS basics](css-basics)
 - [CSS grid](css-grid)
 - [Christmas tree](christmas-tree)
