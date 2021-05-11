@@ -13,24 +13,20 @@ body {
   align-items: center;
   color: #fff;
   background: black;
-  .clock {
-    border-radius: 0.1em;
-    padding: 0.1em;
-    #time {
-      animation: neon 1.5s ease-in-out infinite alternate;
-    }
-  }
+}
+#time {
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes neon {
   from {
     text-shadow: 0 0 0.1em #fff, 0 0 0.11em #fff, 0 0 0.12em #fff, 0 0 0.3em #ffdd1b,
       0 0 0.34em #ffdd1b, 0 0 0.38em #ffdd1b, 0 0 0.42em #ffdd1b, 0 0 0.46em #ffdd1b,
-      0 1em 0.5em #fff, 0 1em 1em #ffdd1b;
+      -0.02em 1em 0.4em #fff, -0.02em 1em 0.7em #ffdd1b;
   }
   to {
     text-shadow: 0 0 0.05em #fff, 0 0 0.07em #fff, 0 0 0.09em #fff, 0 0 0.2em #ffdd1b,
-      0 0 0.3em #ffdd1b, 0 0 0.35em #ffdd1b, 0 0 0.4em #ffdd1b, 0 0 0.44em #ffdd1b, 0 1em 0.4em #fff,
-      0 1em 0.9em #ffdd1b;
+      0 0 0.3em #ffdd1b, 0 0 0.35em #ffdd1b, 0 0 0.4em #ffdd1b, 0 0 0.44em #ffdd1b,
+      0.02em 1em 0.5em #fff, 0.02em 1em 0.8em #ffdd1b;
   }
 }

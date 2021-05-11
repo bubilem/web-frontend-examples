@@ -1,4 +1,4 @@
-# Clock
+# Clocks
 
 HTML, SCSS, JavaScript
 
