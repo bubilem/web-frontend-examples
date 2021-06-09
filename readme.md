@@ -16,6 +16,8 @@ Various illustrations of creation in HTML, CSS, SASS, JS, jQuery...
 - [Piškvorky](piskvorky)
 - [Simple page scroller](simple-page-scroller)
 - [Simple responsive page](simple-responsive-page)
+- [Waves](waves)
+- [Window](window)
 
 ## Getting Started
 

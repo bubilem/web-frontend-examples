@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: navy;
+}
+.waves {
+  background: linear-gradient(180deg, #ccf, navy);
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.wave {
+  width: 20vw;
+  height: 150px;
+  background: navy;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  box-shadow: -20vw 0 navy, 20vw 0 navy, 40vw 0 navy, 60vw 0 navy, 80vw 0 navy;
+  animation-name: wavemove;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.w1 {
+  bottom: 0;
+  animation-duration: 5s;
+  opacity: 0.8;
+}
+.w2 {
+  bottom: 30px;
+  animation-duration: 7s;
+  opacity: 0.4;
+}
+.w3 {
+  bottom: 60px;
+  animation-duration: 11s;
+  opacity: 0.2;
+}
+.w4 {
+  bottom: 90px;
+  animation-duration: 17s;
+  opacity: 0.1;
+}
+h1 {
+  color: white;
+  font-size: 11vw;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.01rem;
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  text-align: center;
+  animation-name: textmove;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes wavemove {
+  from {
+    transform: translateX(0);
+    border-radius: 10% 50% 0 0;
+  }
+  to {
+    transform: translateX(20vw);
+    border-radius: 50% 10% 0 0;
+  }
+}
+@keyframes textmove {
+  0% {
+    transform: rotate(-2deg) translateY(0);
+    letter-spacing: -0.05em;
+  }
+  50% {
+    transform: translateY(-25px);
+    letter-spacing: 0.01em;
+  }
+  100% {
+    transform: rotate(2deg) translateY(0);
+    letter-spacing: -0.05em;
+  }
+}
