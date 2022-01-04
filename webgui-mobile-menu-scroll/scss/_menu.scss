@@ -1,0 +1,113 @@
+#menu-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9;
+  background: transparent;
+  height: 2em;
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  .icon-bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 8px;
+  }
+  &.active {
+    .icon-bar:nth-of-type(1) {
+      transform: translate3d(0, 12px, 0) rotate(45deg);
+    }
+    .icon-bar:nth-of-type(2) {
+      opacity: 0;
+    }
+    .icon-bar:nth-of-type(3) {
+      transform: translate3d(0, -12px, 0) rotate(-45deg);
+    }
+  }
+  &.tip {
+    border-radius: 50%;
+    animation-name: tip;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-iteration-count: 10;
+    animation-direction: normal;
+  }
+}
+@keyframes tip {
+  0% {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.2);
+  }
+  60% {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.2);
+  }
+  65% {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+#menu {
+  display: flex;
+  position: fixed;
+  top: 3em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em 1em;
+  overflow: auto;
+  color: #fff;
+  background: rgba(45, 125, 154, 0.7);
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100vh);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  > nav {
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 100%;
+    }
+  }
+}
+@keyframes menuin {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes menuout {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
